@@ -29,4 +29,6 @@ if __name__ == "__main__":
         else:
             print(question.get_feedback())
 
-    print(f"Thanks for playing! Your total points: {sum([question.get_points() for question in shuffle_questions])}")
+    print(
+        f"Thanks for playing!\n Right answers: {sum([1 for question in shuffle_questions if question.is_correct()])}.\n"
+        f"Your total points: {sum([question.get_points() for question in shuffle_questions])}")
