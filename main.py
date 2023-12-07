@@ -15,7 +15,7 @@ for question in questions_data:
     )
 
 shuffle_questions = shuffle_questions(questions)
-
+# print(shuffle_questions)
 if __name__ == "__main__":
     print("Hello! Welcome to the quiz. You will be asked 5 questions. Good luck!")
     for question in shuffle_questions:
